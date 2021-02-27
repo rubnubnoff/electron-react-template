@@ -1,0 +1,33 @@
+{
+  "name": "Electron",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev:electron": "cross-env NODE_ENV=development webpack --config webpack.electron.config.js --mode development && electron .",
+    "dev:react": "cross-env NODE_ENV=development webpack serve --config webpack.react.config.js --mode development"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.13.8",
+    "@babel/preset-env": "^7.13.8",
+    "@babel/preset-react": "^7.12.13",
+    "@babel/preset-typescript": "^7.13.0",
+    "babel-loader": "^8.2.2",
+    "cross-env": "^7.0.3",
+    "electron": "11.3.0",
+    "html-webpack-plugin": "^5.2.0",
+    "webpack": "^5.24.2",
+    "webpack-cli": "^4.5.0",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "dependencies": {
+    "@types/react": "^17.0.2",
+    "@types/react-dom": "^17.0.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  }
+}
